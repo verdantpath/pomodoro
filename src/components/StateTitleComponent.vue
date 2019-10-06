@@ -1,7 +1,5 @@
 <template>
-  <div>
-    state title
-  </div>
+  <h3>{{ title }}</h3>
 </template>
 
 <style scoped>
