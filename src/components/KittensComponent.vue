@@ -1,10 +1,16 @@
 <template>
-  <div class="well" :class="{ 'hidden': pomodoroState === 'work' }">
-    <img :src="'http://thecatapi.com/api/images/get?type=jpg&size=med&ts=' + timestamp" />
+  <div class="well">
+    <img :src="catImgSrc" />
   </div>
 </template>
 
 <style scoped>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s
+}
+.fade-enter, .fade-leave-active {
+  opacity: 0
+}
 </style>
 
 <script>

@@ -1,12 +1,12 @@
 <template>
   <div>
-    <button @click="start()">
+    <button>
       <i class="glyphicon glyphicon-play"></i>
     </button>
-    <button :disabled="state!=='started'" @click="pause()">
+    <button>
       <i class="glyphicon glyphicon-pause"></i>
     </button>
-    <button :disabled="state!=='started' && state !== 'paused'" @click="stop()">
+    <button>
       <i class="glyphicon glyphicon-stop"></i>
     </button>
   </div>

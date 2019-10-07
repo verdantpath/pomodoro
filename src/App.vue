@@ -6,7 +6,9 @@
     </h2>
     <state-title-component></state-title-component>
     <countdown-component></countdown-component>
-    <kittens-component></kittens-component>
+    <transition name="fade">
+      <kittens-component v-if="kittens"></kittens-component>
+    </transition>
   </div>
 </template>
 
@@ -16,15 +18,23 @@ import CountdownComponent from './components/CountdownComponent.vue'
 import KittensComponent from './components/KittensComponent.vue'
 import StateTitleComponent from './components/StateTitleComponent.vue'
 
+window.data = {
+  kittens: true
+}
+
 export default {
   components: {
     ControlsComponent,
     CountdownComponent,
     KittensComponent,
     StateTitleComponent
+  },
+  data () {
+    return window.data
   }
 }
 </script>
 
 <style>
+
 </style>
