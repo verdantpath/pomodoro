@@ -19,7 +19,8 @@ import KittensComponent from './components/KittensComponent.vue'
 import StateTitleComponent from './components/StateTitleComponent.vue'
 
 window.data = {
-  kittens: true
+  kittens: true,
+  isworking: true
 }
 
 export default {
