@@ -20,7 +20,7 @@ import StateTitleComponent from './components/StateTitleComponent.vue'
 
 window.data = {
   kittens: true,
-  isworking: true
+  isworking: false
 }
 
 export default {
