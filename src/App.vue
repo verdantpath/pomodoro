@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="container">
     <h2>
-      <span>Pomodoro</span>
+      <span>Tomaotes chicken</span>
       <controls-component></controls-component>
     </h2>
     <state-title-component></state-title-component>
@@ -20,7 +20,7 @@ import StateTitleComponent from './components/StateTitleComponent.vue'
 
 window.data = {
   kittens: true,
-  isworking: false
+  isworking: true
 }
 
 export default {
