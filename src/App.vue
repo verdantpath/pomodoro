@@ -1,10 +1,10 @@
 <template>
   <div id="app" class="container">
     <h2>
-      <span>Tomaotes chicken</span>
+      <span>{{ 'Pomodoro' | lowercase }}</span>
       <controls-component></controls-component>
     </h2>
-    <state-title-component></state-title-component>
+    <state-title-component v-bind:isworking="isworking"></state-title-component>
     <countdown-component></countdown-component>
     <transition name="fade">
       <kittens-component v-if="kittens"></kittens-component>
