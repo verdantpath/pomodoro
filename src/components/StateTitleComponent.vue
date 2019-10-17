@@ -1,5 +1,7 @@
 <template>
-  <h3>{{ isworking ? workingtitle : restingtitle }}</h3>
+  <div>
+    <h3>{{ isworking ? workingtitle : restingtitle }}</h3>
+  </div>
 </template>
 
 <style scoped>
@@ -9,8 +11,8 @@
 export default {
   data () {
     return {
-      workingtitle: 'Work',
-      restingtitle: 'Rest'
+      workingtitle: 'Work?',
+      restingtitle: 'Rest!'
     }
   },
   props: ['isworking']
