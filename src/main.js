@@ -7,6 +7,14 @@ Vue.filter('lowercase', (key) => {
   return key.toLowerCase()
 })
 
+Vue.filter('uppercase', (key) => {
+  return key.toUpperCase()
+})
+
+Vue.filter('addspace', (value) => {
+  return value + ' '
+})
+
 Vue.filter('leftpad',  (value) => {
   if (value >= 10) {
     return value
