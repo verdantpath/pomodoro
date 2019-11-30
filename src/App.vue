@@ -17,6 +17,7 @@ import ControlsComponent from './components/ControlsComponent.vue'
 import CountdownComponent from './components/CountdownComponent.vue'
 import KittensComponent from './components/KittensComponent.vue'
 import StateTitleComponent from './components/StateTitleComponent.vue'
+import store from './vuex/store'
 
 window.data = {
   kittens: true,
@@ -24,6 +25,7 @@ window.data = {
 }
 
 export default {
+  store,
   components: {
     ControlsComponent,
     CountdownComponent,
