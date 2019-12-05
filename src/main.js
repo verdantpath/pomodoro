@@ -15,7 +15,7 @@ Vue.filter('addspace', (value) => {
   return value + ' '
 })
 
-Vue.filter('leftpad',  (value) => {
+Vue.filter('leftpad', (value) => {
   if (value >= 10) {
     return value
   }

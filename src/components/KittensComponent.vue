@@ -17,7 +17,7 @@
 export default {
   data () {
     return {
-      catImgSrc: "http://thecatapi.com/api/images/get?size=med"
+      catImgSrc: 'http://thecatapi.com/api/images/get?size=med'
     }
   }
 }
