@@ -1,5 +1,6 @@
 export default {
   isStarted: state => state.started,
   isPaused: state => state.paused,
-  isStopped: state => state.stopped
+  isStopped: state => state.stopped,
+  isWorking: state => state.isWorking
 }

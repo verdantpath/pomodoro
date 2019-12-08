@@ -18,6 +18,7 @@ import CountdownComponent from './components/CountdownComponent.vue'
 import KittensComponent from './components/KittensComponent.vue'
 import StateTitleComponent from './components/StateTitleComponent.vue'
 import store from './vuex/store'
+import { mapGetters } from 'vuex'
 
 window.data = {
   kittens: true,
@@ -34,7 +35,10 @@ export default {
   },
   data () {
     return window.data
-  }
+  },
+  computed: mapGetters({
+    isworking: 'isWorking'
+  })
 }
 </script>
 
