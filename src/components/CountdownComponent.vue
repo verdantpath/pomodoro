@@ -10,12 +10,12 @@
 </style>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
-  data () {
-    return {
-      min: 1,
-      sec: 5
-    }
-  }
+  computed: mapGetters({
+    min: 'getMinutes',
+    sec: 'getSeconds'
+  })
 }
 </script>
