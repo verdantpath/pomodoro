@@ -15,9 +15,9 @@
 
 <script>
 export default {
-  data () {
-    return {
-      catImgSrc: 'http://thecatapi.com/api/images/get?size=med'
+  computed: {
+    catImgSrc () {
+      return 'http://thecatapi.com/api/images/get?size=med&ts=' + this.$store.getters.getTimestamp
     }
   }
 }
