@@ -13,17 +13,12 @@
 </template>
 
 <script>
-import ControlsComponent from './components/ControlsComponent.vue'
-import CountdownComponent from './components/CountdownComponent.vue'
-import KittensComponent from './components/KittensComponent.vue'
-import StateTitleComponent from './components/StateTitleComponent.vue'
+import ControlsComponent from './components/ControlsComponent'
+import CountdownComponent from './components/CountdownComponent'
+import KittensComponent from './components/KittensComponent'
+import StateTitleComponent from './components/StateTitleComponent'
 import store from './vuex/store'
 import { mapGetters } from 'vuex'
-
-window.data = {
-  kittens: true,
-  isworking: true
-}
 
 export default {
   store,
@@ -32,9 +27,6 @@ export default {
     CountdownComponent,
     KittensComponent,
     StateTitleComponent
-  },
-  data () {
-    return window.data
   },
   computed: mapGetters({
     isworking: 'isWorking'
