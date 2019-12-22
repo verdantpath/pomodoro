@@ -3,6 +3,10 @@
 import Vue from 'vue'
 import App from './App'
 
+import VueNoiseGeneratorPlugin from './plugins/VueNoiseGeneratorPlugin'
+
+Vue.use(VueNoiseGeneratorPlugin)
+
 Vue.filter('lowercase', (key) => {
   return key.toLowerCase()
 })
