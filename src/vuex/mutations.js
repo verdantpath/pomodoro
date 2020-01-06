@@ -49,5 +49,13 @@ export default {
     state.started = false
     togglePomodoro(state, true)
     Vue.noise.stop()
+  },
+  [types.TOGGLE_SOUND] (state) {
+    state.soundEnabled = !state.soundEnabled
+    if (state.isWorking && state.soundEnabled) {
+      Vue.noise.start()
+    } else {
+      Vue.noise.pause()
+    }
   }
 }

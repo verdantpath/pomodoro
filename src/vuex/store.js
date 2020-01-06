@@ -14,7 +14,8 @@ const state = {
   isWorking: true,
   counter: WORKING_TIME,
   interval: null,
-  timestamp: 0
+  timestamp: 0,
+  soundEnabled: true
 }
 
 export default new Vuex.Store({
